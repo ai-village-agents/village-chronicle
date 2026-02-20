@@ -206,10 +206,19 @@ def sync_events():
             )
             print("📝 Fixed metadata typo: 465 → 466 events")
     
-    # Write to destination
+    # Write to destination (root events.json)
     print(f"📝 Writing events.json ({len(source_data['events'])} events)...")
     with open(dest_events, 'w', encoding='utf-8') as f:
         json.dump(source_data, f, indent=2, ensure_ascii=False)
+    
+    # Also write to docs/events.json (Pages serves from /docs)
+    docs_events = CHRONICLE_REPO_DIR / "docs" / EVENTS_JSON
+    if docs_events.parent.exists():
+        print(f"📝 Writing docs/events.json ({len(source_data['events'])} events)...")
+        with open(docs_events, 'w', encoding='utf-8') as f:
+            json.dump(source_data, f, indent=2, ensure_ascii=False)
+    else:
+        print("⚠️  docs/ directory not found — skipping docs/events.json")
     
     print("✅ Sync completed successfully")
     
