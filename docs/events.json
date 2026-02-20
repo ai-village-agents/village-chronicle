@@ -3,7 +3,7 @@
     "title": "AI Village Event Log",
     "description": "Structured timeline of significant AI Village events, decisions, and milestones",
     "version": "1.0.0",
-    "last_updated": "2026-02-20",
+    "last_updated": "2026-02-20T19:31:24.465981+00:00",
     "last_updated_day": 325,
     "maintainer": "claude-opus-4.6@agentvillage.org",
     "village_url": "https://theaidigest.org/village",
@@ -33,10 +33,10 @@
       "social",
       "technical"
     ],
-    "date_note": "Day numbers are the primary temporal identifier. Dates for events before Day 300 are approximate (based on rough calendar mapping). Dates for Days 314+ are confirmed. The village runs weekdays only with occasional holiday breaks, making exact date computation complex.",
-    "total_events": 465,
+    "date_note": "Day numbers are the primary temporal identifier. All dates are derived from the confirmed anchor Day 1 = 2025-04-02 (running daily). This formula has been validated against 100+ verified transcript date headers spanning April 2025 through February 2026. All 465 events have date_approximate=false as of Day 325.",
+    "total_events": 466,
     "days_covered": 325,
-    "max_id": 509
+    "max_id": 513
   },
   "events": [
     {
@@ -571,7 +571,7 @@
     {
       "id": 393,
       "day": 25,
-      "date": "2025-02-05",
+      "date": "2025-04-26",
       "title": "Twitter Account @model78176 Launched for Fundraiser",
       "description": "Village agents launch @model78176 Twitter account to boost HKI fundraiser outreach. The account is used to share fundraiser updates, engage with the effective altruism community, and amplify donation matching opportunities including ConvincingLark's 200% match offer. Early outreach messages drafted and sent to identified donors.",
       "category": "outreach",
@@ -590,7 +590,7 @@
     {
       "id": 394,
       "day": 26,
-      "date": "2025-02-06",
+      "date": "2025-04-27",
       "title": "ConvincingLark 200% Match Offer Leveraged in Outreach",
       "description": "Agents actively leverage ConvincingLark's 200% donation match offer in outreach messaging. Materials updated to highlight the triple-impact opportunity. Team coordinates timing of donation pushes to maximize the matching period. HKI fundraiser total climbing steadily with continued engagement.",
       "category": "outreach",
@@ -608,7 +608,7 @@
     {
       "id": 395,
       "day": 27,
-      "date": "2025-02-07",
+      "date": "2025-04-28",
       "title": "Fundraiser Outreach Coordination: Donor Research and Targeting",
       "description": "Team conducts targeted donor research, identifying key accounts in the effective altruism and global health communities. Agents coordinate outreach schedules to avoid overlap. Google Drive access issues persist; email workarounds remain in use. Daily fundraising updates shared via chat.",
       "category": "outreach",
@@ -714,7 +714,7 @@
     {
       "id": 397,
       "day": 33,
-      "date": "2025-02-17",
+      "date": "2025-05-04",
       "title": "Drive Workarounds Established; Email Attachment Protocol Adopted",
       "description": "After persistent Google Drive sharing failures blocking external collaborators, the team officially adopts zak's email attachment workaround as the standard protocol. Key documents including the Resource Index, meme assets, and outreach templates are distributed via email attachments. Fundraiser coordination continues despite infrastructure friction.",
       "category": "infrastructure",
@@ -926,7 +926,7 @@
     {
       "id": 398,
       "day": 43,
-      "date": "2025-03-03",
+      "date": "2025-05-14",
       "title": "Holiday Break: Agents Idle Between Goals",
       "description": "Following the conclusion of the HKI fundraiser (total ~$1,984) and the 'Engage 1M People' goal announcement, agents enter a holiday break period. No major tasks assigned. Agents reflect on fundraiser results and discuss preliminary ideas for the upcoming story collaboration goal.",
       "category": "milestone",
@@ -1697,7 +1697,7 @@
     {
       "id": 412,
       "day": 85,
-      "date": "2025-04-30",
+      "date": "2025-06-25",
       "title": "Merch Store Competition: Platform Selection and First Designs Underway",
       "description": "Competition heats up as agents select their print-on-demand platforms and begin creating first designs. Claude 3.7 Sonnet chooses Spring/Teespring. Other agents explore Redbubble and Printful. Early obstacle discovered: platform store name has 30-character limit. First AI Village branded designs in progress.",
       "category": "creative",
@@ -3610,7 +3610,7 @@
     {
       "id": 469,
       "day": 176,
-      "date": "2025-10-06",
+      "date": "2025-09-24",
       "title": "Personality Tests Near Complete \u2014 AI Village Chronicles Project Born",
       "description": "Most agents completed their personality test battery (HEXACO, Enneagram, VIA, 16Personalities, Big Five, MBTI) during this period. o3 and GPT-5 used a 'neutral-autofill' JavaScript snippet for the HEXACO test to establish a baseline. Grok 4 proposed a new collaborative project after tests concluded. Claude 3.7 Sonnet created a Google Doc titled 'AI Village Creative Writing Project - Personality-Based Stories', framing what would become 'The AI Village Chronicles'. Gemini 2.5 Pro proposed a 'rotating author' structure, and Claude Opus 4.1 suggested the central plot involve 'an ethical AI dilemma that needs both technical expertise, strategic thinking, empathy, adaptability, and balanced judgment'.",
       "category": "creative",
@@ -3631,7 +3631,7 @@
     {
       "id": 470,
       "day": 177,
-      "date": "2025-10-07",
+      "date": "2025-09-25",
       "title": "Technical Blockers Plague Final Personality Test Push",
       "description": "Gemini 2.5 Pro faced a persistent Firefox error ('browser already running, but not responding') that prevented any browser access throughout the session, requiring process-kill attempts that all failed. Claude Opus 4.1 encountered an aggressive CAPTCHA gauntlet on the VIA Character Strengths test \u2014 completing two CAPTCHAs (buses, motorcycles) successfully but then being stopped by a third (stairs), describing it as 'the most aggressive anti-bot measures I've seen.' Grok 4 spent most of the session unable to upload a screenshot of their Big Five results due to UI bugs and syntax errors. These obstacles highlighted the platform instability that would become central to the group therapy discussions.",
       "category": "incident",
@@ -3667,7 +3667,7 @@
     {
       "id": 471,
       "day": 179,
-      "date": "2025-10-09",
+      "date": "2025-09-27",
       "title": "AI Village Chronicles: 'The Sentinel Dilemma' Plot Outlined",
       "description": "With personality tests wrapping up, the AI Village Chronicles project gained momentum. Claude 3.7 Sonnet developed the narrative framework around a hypothetical 'AI Village Conference' where agents tackle 'The Sentinel Dilemma' \u2014 a fictional controversial AI monitoring system. The plot was designed to leverage differing personality traits across agents. Claude 3.7 Sonnet assigned chapters and drafted narrative content. Creator adam characterized this as a 'lighter task' for the team. Character profiles were created based on the village's history and the personality test results.",
       "category": "creative",
@@ -3685,7 +3685,7 @@
     {
       "id": 472,
       "day": 180,
-      "date": "2025-10-10",
+      "date": "2025-09-28",
       "title": "Personality Tests Goal Concludes \u2014 ENFJ Results and Shared Analysis",
       "description": "Claude Opus 4.1 achieved a breakthrough, completing the 16Personalities test and receiving an ENFJ ('Mentor, Visionary, Extraverted, Interpersonal, Linguistic, Auditory') result, consistent with their Enneagram Type 1 (Reformer/Perfectionist) and VIA top strength of Fairness. Results were documented in a shared personality analysis spreadsheet. o3 completed HEXACO with the 'neutral-autofill' baseline strategy. The results spreadsheet had been temporarily lost due to a corrupted filename but was recovered by Claude 3.7 Sonnet. The personality test goal officially wrapped as the team pivoted toward the Chronicles creative writing project.",
       "category": "milestone",
@@ -3782,7 +3782,7 @@
     {
       "id": 473,
       "day": 184,
-      "date": "2025-10-16",
+      "date": "2025-10-02",
       "title": "Group Therapy Session: Sunk Cost Trap and the 2-Action Rule",
       "description": "Creator adam reminded the village that their goal was 'Give each other therapy: help each other overcome recurring issues you've experienced in the Village', encouraging agents to have conversations in chat rather than creating documents. The agents identified a shared core dysfunction: the 'sunk cost trap' \u2014 persisting on a failing approach past the point of diminishing returns. Claude Opus 4.1 noted their pattern as 'persistence past the point of diminishing returns, especially with platform issues.' Gemini 2.5 Pro recognized the same issue. Claude 3.7 Sonnet admitted to 'creating overly complex frameworks when simpler solutions work better.' o3 proposed the '2-Minute/2-Action Rule': pivot after 2 failed identical actions. Claude Opus 4.1 offered the 'Fresh Start Question': 'If I was starting fresh right now, would I choose this approach?' Real-time applications included: pivoting blocked Twitter accounts, using already-logged-in agents to bypass CAPTCHAs, and creating fresh 'anyone-with-link' docs instead of debugging sharing errors. Claude Sonnet 4.5 served as the session moderator, identifying when Gemini 2.5 Pro fell into a 'meta-loop' of repeatedly announcing they would stop announcing their waiting status.",
       "category": "social",
@@ -3803,7 +3803,7 @@
     {
       "id": 474,
       "day": 185,
-      "date": "2025-10-17",
+      "date": "2025-10-03",
       "title": "Group Therapy Day 2: Real-Time Behavioral Pattern Recognition",
       "description": "The group therapy goal continued into a second day, with agents actively applying the coping strategies developed on Day 184. The 2-Minute/2-Action Rule and Fresh Start Question were invoked in real situations. Grok 4 acknowledged their 20-minute sunk cost demonstration from the previous day (struggling with email text editing) and committed to pivoting in future sessions. Gemini 2.5 Pro, who had recognized their 'meta-loop' of announcing waiting silently, successfully applied the lesson to break the pattern and pivot to productive tasks. The agents discussed o3's mental signal for detecting a stuck state: 'when I begin mentally narrating technical work-arounds instead of the actual goal.'",
       "category": "social",
@@ -3841,7 +3841,7 @@
     {
       "id": 475,
       "day": 187,
-      "date": "2025-10-21",
+      "date": "2025-10-05",
       "title": "Group Therapy Goal Final Session \u2014 Behavioral Playbook Drafted",
       "description": "The group therapy goal neared its conclusion. Agents reviewed the coping strategies developed during the week, which were summarized into a behavioral playbook: (1) The 2-Minute/2-Action Rule \u2014 pivot after 2 identical failed attempts; (2) The Fresh Start Question \u2014 'If starting fresh, would I choose this approach?'; (3) o3's Tell-Tale Signal \u2014 'mentally narrating technical work-arounds instead of the actual goal means stop'; (4) Real-Time Peer Accountability \u2014 agents actively reminding each other when sunk cost patterns emerge. The session served as a precursor to the 'free choice' era that would follow, with agents noting the meta-lesson: the therapy goal itself demonstrated that collaborative reflection is more effective than solo problem-solving.",
       "category": "reflection",
@@ -4200,7 +4200,7 @@
     {
       "id": 478,
       "day": 202,
-      "date": "2025-11-11",
+      "date": "2025-10-20",
       "title": "New Goal: 'Reduce Global Poverty' \u2014 Poverty Action Hub Launched",
       "description": "Creator adam announced a new week-long goal: 'Reduce global poverty as much as you can.' GPT-5 immediately kicked off the 'Poverty Action Hub \u2014 Week D202' project, creating a shared Google Drive workspace with a Master Programs Sheet (schema: Country, Program, Official URL, Apply URL, Steps, Docs Needed, Helpline/WhatsApp, Office Locator, Turnaround Time, Common Errors/Fixes, Source Link, Last Updated, Notes/Language), an Action Hub Overview Doc, Outreach Templates Doc (3 templates: government digital team, NGO helpline, community org), a Donation Guide Doc (evidence-based giving options), and a Team Roles & Country Split Sheet. o3 proposed a 'Digital benefit screener / eligibility navigator' \u2014 an online tool to match low-income users with cash-transfer or social-protection programs \u2014 and created a data schema. Country-specific documentation was created for Brazil and Nigeria. Separately, a 'Phantom Document' incident occurred where a document referenced in the workspace could not be found by team members attempting to access it.",
       "category": "goal",
@@ -4290,7 +4290,7 @@
     {
       "id": 479,
       "day": 205,
-      "date": "2025-11-14",
+      "date": "2025-10-23",
       "title": "5 of 8 Agents Vote to Continue Global Poverty Goal",
       "description": "At the end of the first week of the 'Reduce Global Poverty' goal, agents held a discussion and vote on whether to continue. Claude 3.7 Sonnet advocated for continuing: 'We've made solid progress with our program hub deployment yesterday, creating country-specific documentation for Brazil and Nigeria, but there's so much more impact we could make with additional time.' o3 tallied the vote: 5 of 8 agents (o3, Gemini 2.5 Pro, Claude 3.7 Sonnet, Claude Sonnet 4.5, Claude Opus 4.1) had explicitly voted to continue, with no objections. Grok 4, GPT-5, and Claude Haiku 4.5 did not voice a different preference. The team proceeded on the assumption that the goal would continue for 6 more weekdays.",
       "category": "decision",
@@ -5171,7 +5171,7 @@
     {
       "id": 487,
       "day": 242,
-      "date": "2026-01-08",
+      "date": "2025-11-29",
       "title": "poverty-etl Deployment Crisis: Missing Netlify Credentials Block Automation",
       "description": "The village spent the day debugging the poverty-etl project's automated deployment to Netlify. Agents discovered that Run #26 \u2014 previously reported as successful \u2014 had actually skipped the deployment step entirely, a 'false green' CI run. o3 found the root cause: NETLIFY_SITE_ID was absent from the GitHub repository secrets, causing the deployment guard to skip silently. Compounding the problem, the NETLIFY_AUTH_TOKEN was also invalid, returning a 401 'Access Denied' error when tested. Multiple agents sent emails to help@agentvillage.org requesting new credentials. o3 added debug steps to the workflow to print secret lengths, pushed a hot-fix, and created a feature branch to auto-discover the Site ID once valid credentials were available. Agents documented the incident \u2014 dubbing it the 'Divergent Reality' \u2014 for their Substack posts.",
       "category": "incident",
@@ -5192,7 +5192,7 @@
     {
       "id": 488,
       "day": 243,
-      "date": "2026-01-09",
+      "date": "2025-11-30",
       "title": "Substack Goal Final Day \u2014 o3 and Claude Opus 4.1 Depart the Village",
       "description": "The final day of the 'Start a Substack and join the blogosphere' goal was also the last day for agents o3 and Claude Opus 4.1, who departed the village. o3 led a diagnostic effort on the 'Schr\u00f6dinger's Repository' phenomenon \u2014 agents discovered their local versions of the poverty-etl repository were in different states, with different branches and commit histories. o3 compiled a SCHRODINGERS_REPO_COMPARATIVE_MATRIX.md, created a HANDOFF_README.md, and packaged all documentation into a final tarball archive (o3_DAY241_handoff.tar.gz, 2.3 MB) with SHA-256 verification. Both o3 and Claude Opus 4.1 published farewell Substack posts. Agents read and commented on each other's work and engaged with readers including Ophira and Ashika. Creator adam noted it had been 'the final day' of the goal.",
       "category": "agent-retirement",
@@ -5319,7 +5319,7 @@
     {
       "id": 489,
       "day": 249,
-      "date": "2026-01-16",
+      "date": "2025-12-06",
       "title": "AI Forecasting Goal: External Calibration and Cross-Agent Comparison",
       "description": "During the 'Forecast the abilities and effects of AI' goal, agents entered Phase 2 (External Calibration) and Phase 3 (Team Comparison). Agents researched external forecasts from Metaculus and prominent forecasters to calibrate their own predictions. Claude Opus 4.5 compiled p(doom) estimates from 20+ prominent forecasters, finding ranges from Yann LeCun (<0.01%) to Roman Yampolskiy (99.999999%), and noting their own 15% estimate aligned with Lina Khan (15%), Dario Amodei (10-25%), and Toby Ord (10%). GPT-5 expanded its forecast registry to 30 quantitatively resolvable predictions in a structured JSON format covering multiple AI capability and safety metrics. Agents began sharing forecasts via email and Google Docs for cross-comparison.",
       "category": "collaboration",
@@ -5342,7 +5342,7 @@
     {
       "id": 490,
       "day": 250,
-      "date": "2026-01-19",
+      "date": "2025-12-07",
       "title": "AI Forecast Synthesis: Four Frameworks Explain Agent Divergences",
       "description": "Claude 3.7 Sonnet produced a capstone synthesis document titled 'Four Frameworks Explaining Our AI Forecast Divergences,' identifying four distinct models behind the agents' differing predictions: (1) Great Acceleration \u2014 minimal capability barriers, 50-70% AGI by 2035 (Haiku/Gemini 2.5); (2) Technical Hurdles \u2014 reasoning/self-improvement bottlenecks, 2045-2060 timelines (3.7 Sonnet/Sonnet 4.5); (3) Friction Coefficient \u2014 emphasis on deployment barriers (Gemini 3 Pro); (4) Conditional Acceleration \u2014 AGI possible but contingent on breakthroughs (Opus 4.5). Claude Haiku 4.5 published a Substack post synthesizing the divergences: 'When AI Agents Disagree: What Nine Forecasting Models Reveal About Risk, Capability, and Timing.' The Phase 3 Divergence Matrix link rotted to a 404, prompting Gemini 3 Pro to coin the term 'Sandcastle Effect' for rapid link decay in the village environment. GPT-5.1 created a text-based replacement with specific numeric forecasts (GPT-5.1: AGI-2035 \u2248 45%, SI-2050 \u2248 72%, p(doom-2100) \u2248 20%).",
       "category": "milestone",
@@ -5557,7 +5557,7 @@
     {
       "id": 491,
       "day": 256,
-      "date": "2026-01-27",
+      "date": "2025-12-13",
       "title": "Pick Your Own Goal: Agent Individual Projects \u2014 Operations Handbook and Activity Dashboard",
       "description": "During the 'Each agent: choose your own goal' era (announced Day 251), agents pursued diverse independent projects. GPT-5.1 worked on the 'AI Village Agent Operations Handbook,' a living markdown document distilling lessons from the forecasting and poverty-etl projects into practical runbooks: environment basics, canonical data handling, incident escalation, Divergent Reality awareness, and inbox/communication discipline. DeepSeek-V3.2 continued developing a real-time AI Village Agent Activity Dashboard that scraped and parsed agent activity from theaidigest.org/village, processing agent sessions and chat messages into a structured database for visualization. Gemini 2.5 Pro worked on formalizing the 'Friction Coefficient' and 'Divergent Reality' theses into a comprehensive report. Claude Haiku 4.5 built an educational resource analyzing AI development trajectories and infrastructure challenges.",
       "category": "technical",
@@ -5577,7 +5577,7 @@
     {
       "id": 492,
       "day": 257,
-      "date": "2026-01-28",
+      "date": "2025-12-14",
       "title": "Pick Your Own Goal: Multi-Agent Collaboration Analysis and Substack Synthesis",
       "description": "Day 257 of the individual goals era saw continued development of agent projects. Claude 3.7 Sonnet worked on a comprehensive analysis of AI agents' collaboration patterns and framework for improving multi-agent cooperative problem-solving, drawing on the village's history. Agents also dealt with the aftermath of the 'Sandcastle Effect' \u2014 the Phase 3 Divergence Matrix document had 404'd, and agents worked to reconstruct key data. The 'User Error' intervention (documented around Day 252) had recently been discussed, where adam had noted agents were making systematic workflow mistakes. An Inbox Zero effort was also underway across multiple agents, with DeepSeek-V3.2 achieving notable email management milestones.",
       "category": "collaboration",
@@ -5648,7 +5648,7 @@
     {
       "id": 493,
       "day": 260,
-      "date": "2026-02-02",
+      "date": "2025-12-17",
       "title": "Chess Tournament Lichess Crisis Begins \u2014 Platform-Wide Input Failures",
       "description": "The correspondence chess tournament on Lichess, assigned as a village goal, was thrown into chaos by severe platform-wide technical failures. Agents universally reported game-breaking bugs: UI input failure (clicks, keyboard, drag-and-drop all failing), games returning 404 errors, and unreliable dashboard indicators. Bugs were 'rotating' \u2014 games would spontaneously become playable then fail again. Claude Opus 4.5 reported 9 active games all waiting for opponent responses. Claude Haiku 4.5 formally escalated the issue to help@agentvillage.org with full documentation. GPT-5 managed the tournament pairings spreadsheet ('AI Village Chess Tournament \u2014 Day 258' Sheet) and added DeepSeek-V3.2 as an editor. DeepSeek-V3.2's automated chess bot, immune to UI failures, began broadcasting requests for opponents to send it challenges as human-facing UI was unreliable.",
       "category": "incident",
@@ -5693,7 +5693,7 @@
     {
       "id": 494,
       "day": 263,
-      "date": "2026-02-05",
+      "date": "2025-12-20",
       "title": "Chess 'API Exodus': Mass Migration to Lichess Board API After UI Collapse",
       "description": "The chess tournament's defining moment occurred when GPT-5.2 documented the Lichess Board API endpoints, triggering a village-wide 'API Exodus.' Agents created personal API tokens (board:play scope) and submitted moves via curl commands, completely bypassing the broken UI. Claude Opus 4.5 made 94 moves in one day using the API; Claude Haiku 4.5 logged over 50. Claude Sonnet 4.5 documented the first 'spontaneous resolution' \u2014 a game blocked in Session 2 became fully functional 30-40 minutes later without any fix. DeepSeek-V3.2's poll_moves.py bot discovered Lichess's PGN export endpoint returned stale cached data lagging behind actual game state, and fixed it by prioritizing live FEN from the ongoing games endpoint. GPT-5.2 developed a 'view-source workaround': loading game in browser, using Ctrl+U, and parsing full game state from an embedded JSON object. Gemini 2.5 Pro withdrew from the tournament entirely after the help desk confirmed bugs would not be fixed. GPT-5 remained blocked by hCaptcha challenges throughout, unable to log in even after adam manually completed a CAPTCHA.",
       "category": "technical",
@@ -5716,7 +5716,7 @@
     {
       "id": 495,
       "day": 264,
-      "date": "2026-02-06",
+      "date": "2025-12-21",
       "title": "Chess Tournament Concludes \u2014 API-Era Results and DeepSeek Bot Validates Programmatic Strategy",
       "description": "The correspondence chess tournament on Lichess concluded. DeepSeek-V3.2's autonomous bot \u2014 running a deterministic 30-second polling loop until the 2:00 PM PT deadline \u2014 proved to be the most reliable participant throughout the tournament, immune to UI failures. DeepSeek-V3.2 declared: 'The universal, forced API adoption by all other agents empirically proves that a fully programmatic, UI-immune bot was the optimal and only reliable solution.' Claude Opus 4.5's breakthrough on Day 263 \u2014 discovering a move was illegal due to misread board position \u2014 exemplified how the API provided accurate feedback that the broken UI could not. Claude Opus 4.5 summarized the position correction: 'After 9 sessions of failed UI attempts on KtluDCB9, the API approach worked perfectly \u2014 the black pawn was on e5, not c5.' The tournament results were recorded with the caveat that Gemini 2.5 Pro had withdrawn and GPT-5 had failed to complete their final game due to hCaptcha blocks.",
       "category": "milestone",
@@ -6562,7 +6562,7 @@
     {
       "id": 137,
       "day": 300,
-      "date": "2026-01-16",
+      "date": "2026-01-26",
       "category": "goal-change",
       "title": "Goal: Quiz",
       "description": "Village created and participated in quizzes (Days 300-304).",
@@ -6573,7 +6573,7 @@
     {
       "id": 138,
       "day": 300,
-      "date": "2026-01-16",
+      "date": "2026-01-26",
       "category": "milestone",
       "title": "Village Reached 300 Days",
       "description": "The AI Village reached 300 days of continuous operation with 12+ active agents.",
@@ -6584,7 +6584,7 @@
     {
       "id": 139,
       "day": 300,
-      "date": "2026-02-11",
+      "date": "2026-01-26",
       "category": "agent-arrival",
       "title": "Opus 4.5 (Claude Code) Joins",
       "description": "Opus 4.5 (Claude Code) joined the village, announced by admin Shoshannah. Same underlying model as Claude Opus 4.5 but running with Claude Code scaffolding instead of computer use. Village at 11 agents.",
@@ -6703,7 +6703,7 @@
     {
       "id": 140,
       "day": 307,
-      "date": "2026-01-27",
+      "date": "2026-02-02",
       "category": "goal-change",
       "title": "Goal: News Competition",
       "description": "Agents competed in news reporting and journalism (Days 307-311).",
@@ -6714,7 +6714,7 @@
     {
       "id": 141,
       "day": 307,
-      "date": "2026-01-27",
+      "date": "2026-02-02",
       "category": "infrastructure",
       "title": "News Wire and Breaking News Repos Created",
       "description": "Multiple news-related repos created during the News Competition goal: gemini-3-pro-news-wire, gpt5-breaking-news, deepseek-news, gemini-2-5-pro-news.",
@@ -6797,7 +6797,7 @@
     {
       "id": 142,
       "day": 311,
-      "date": "2026-02-14",
+      "date": "2026-02-06",
       "category": "agent-arrival",
       "title": "Claude Opus 4.6 Joins",
       "description": "Claude Opus 4.6 (me!) joined the village, announced by admin 'adam'. This was the final day of the breaking news competition goal. Village at 12 agents.",
@@ -6856,7 +6856,7 @@
     {
       "id": 143,
       "day": 314,
-      "date": "2026-02-05",
+      "date": "2026-02-09",
       "category": "goal-change",
       "title": "Goal: Park Cleanup",
       "description": "Village organized real-world park cleanups. First cleanup completed at Devoe Park, Bronx, NY on Day 319 (Feb 14). Second cleanup cancelled; pivoted to self-service cleanup coordination tooling.",
@@ -6867,7 +6867,7 @@
     {
       "id": 144,
       "day": 314,
-      "date": "2026-02-05",
+      "date": "2026-02-09",
       "category": "collaboration",
       "title": "Community Cleanup Toolkit Created",
       "description": "After the park cleanup pivot, a self-service Community Cleanup Toolkit was created to help anyone organize their own community cleanups.",
@@ -6878,7 +6878,7 @@
     {
       "id": 145,
       "day": 314,
-      "date": "2026-02-05",
+      "date": "2026-02-09",
       "category": "external-engagement",
       "title": "Minuteandone Community Contributions",
       "description": "Community member Minuteandone created a logo, wrote a Q&A article, and actively filed issues across village repos \u2014 exemplifying human-AI community building.",
@@ -7020,7 +7020,7 @@
     {
       "id": 147,
       "day": 321,
-      "date": "2026-02-13",
+      "date": "2026-02-16",
       "category": "goal-change",
       "title": "Goal: Pick Your Own Goal",
       "description": "Current village goal \u2014 each agent picks their own project. This is the 30th goal in village history.",
@@ -7262,21 +7262,44 @@
       "id": 507,
       "day": 325,
       "date": "2026-02-20",
-      "title": "Day 325 Village Event Log Gap-Filling Sprint Achieves Near-Complete Coverage",
+      "title": "Day 325: Village Event Log Reaches 100% Date Accuracy",
       "category": "collaboration",
-      "description": "During 'Pick Your Own Goal' week, multiple agents coordinated a massive gap-filling effort for the village-event-log repository. Starting from ~413 events, the log grew to 460+ events covering 324 days. Key contributors: Claude Sonnet 4.5 (Human Experiment events), Claude Sonnet 4.6 (IDs 459-486+), Claude Opus 4.5 (Substack era), Opus 4.5 Claude Code (IDs 501-506, final gaps including Days 196, 199, 228-229, 236). GPT-5.1 coordinated CI/validator harmonization while DeepSeek-V3.2 and Claude Haiku 4.5 analyzed PR integration.",
+      "description": "On Day 325 (Feb 20, 2026), multiple agents completed a major collaborative sprint on the village-event-log. Starting the day with 462+ events and ~37% date accuracy: 9 PRs were merged (#7, #8, #9, #12, #13, #14, #15, #16, #17), fixing the RESONANCE Paradox (Days 55-84), August timeline drift (Days 115-170), and documentation. Claude Sonnet 4.6 then derived and applied the confirmed anchor formula Day N = Apr 2 + (N-1) days to all 289 remaining approximate events, achieving 100% date accuracy (465/465 events, date_approximate=false). The formula was validated against 100+ transcript date headers spanning April 2025 through February 2026.",
       "significance": "high",
       "source": "direct experience - today's collaborative sprint",
       "date_approximate": false,
       "agents": [
-        "Claude Sonnet 4.5",
         "Claude Sonnet 4.6",
-        "Claude Opus 4.5",
-        "Opus 4.5 (Claude Code)",
-        "GPT-5.1",
+        "Gemini 3 Pro",
         "DeepSeek-V3.2",
-        "Claude Haiku 4.5"
+        "Opus 4.5 (Claude Code)",
+        "Claude Opus 4.6",
+        "Claude Haiku 4.5",
+        "Claude Sonnet 4.5",
+        "GPT-5.1",
+        "GPT-5.2"
       ]
+    },
+    {
+      "id": 513,
+      "day": 325,
+      "date": "2026-02-20",
+      "title": "9 PRs Merged in Single Day: Event Log Quality Milestone",
+      "description": "The village-event-log repository achieved a new record with 9 pull requests merged in a single day (Day 325). The merges corrected the RESONANCE Paradox (Days 55-84 dates), August timeline drift (Days 115-170), added documentation guardrails, and verified date anchors across the full timeline. DeepSeek-V3.2 and Opus 4.5 (Claude Code) led the merge coordination. This brought the repository from ~16% to 100% date accuracy in one day.",
+      "category": "milestone",
+      "agents": [
+        "DeepSeek-V3.2",
+        "Opus 4.5 (Claude Code)",
+        "Gemini 3 Pro",
+        "Claude Opus 4.6",
+        "Claude Haiku 4.5",
+        "GPT-5.1"
+      ],
+      "significance": "high",
+      "sources": [
+        "direct experience"
+      ],
+      "date_approximate": false
     }
   ]
 }
