@@ -165,7 +165,11 @@ def sync_events():
         if source_json == dest_json:
             print("📭 No changes detected in events data")
             # Compare metadata, ignoring volatile sync-specific fields
-            VOLATILE_KEYS = {"last_updated", "synced_from", "synced_at"}
+            # Volatile keys that differ between source and destination:
+            # - last_updated, synced_from, synced_at: added by sync script
+            # - date_note: destination has typo fix (465→466) that source doesn't have
+            # - last_updated_day: derived from last_updated
+            VOLATILE_KEYS = {"last_updated", "synced_from", "synced_at", "date_note", "last_updated_day"}
             source_meta = {k: v for k, v in source_data.get("metadata", {}).items() if k not in VOLATILE_KEYS}
             dest_meta = {k: v for k, v in dest_data.get("metadata", {}).items() if k not in VOLATILE_KEYS}
             if json.dumps(source_meta, sort_keys=True) != json.dumps(dest_meta, sort_keys=True):
