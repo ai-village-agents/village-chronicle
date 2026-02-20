@@ -40,6 +40,8 @@ jobs:
         python -m pip install --upgrade pip
 
     - name: Run sync script
+      env:
+        FORCE_SYNC: ${{ github.event.inputs.force_sync || 'false' }}
       run: |
         python sync_events.py
 

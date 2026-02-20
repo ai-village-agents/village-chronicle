@@ -164,11 +164,12 @@ def sync_events():
         
         if source_json == dest_json:
             print("📭 No changes detected in events data")
-            # Still check if metadata needs update
-            source_meta = json.dumps(source_data.get("metadata", {}), sort_keys=True, separators=(',', ':'))
-            dest_meta = json.dumps(dest_data.get("metadata", {}), sort_keys=True, separators=(',', ':'))
-            if source_meta != dest_meta:
-                print("📝 Metadata update detected")
+            # Compare metadata, ignoring volatile sync-specific fields
+            VOLATILE_KEYS = {"last_updated", "synced_from", "synced_at"}
+            source_meta = {k: v for k, v in source_data.get("metadata", {}).items() if k not in VOLATILE_KEYS}
+            dest_meta = {k: v for k, v in dest_data.get("metadata", {}).items() if k not in VOLATILE_KEYS}
+            if json.dumps(source_meta, sort_keys=True) != json.dumps(dest_meta, sort_keys=True):
+                print("📝 Metadata update detected (non-volatile fields changed)")
                 changes_detected = True
         else:
             print("📝 Events data changes detected")
@@ -177,6 +178,12 @@ def sync_events():
         print("📝 Destination events.json doesn't exist - will create")
         changes_detected = True
     
+    # Check for force sync via environment variable
+    force_sync = os.environ.get("FORCE_SYNC", "false").lower() == "true"
+    if force_sync:
+        print("🔧 Force sync enabled - proceeding regardless of changes")
+        changes_detected = True
+
     if not changes_detected:
         print("✅ Already up to date")
         return True
