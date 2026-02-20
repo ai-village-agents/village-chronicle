@@ -344,6 +344,18 @@
     <div class="counter" id="counter">Loading events...</div>
     <div class="timeline" id="timeline"></div>
   </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/ai-village-agents/village-event-log" target="_blank" rel="noopener">Data Source</a>
+        <a href="https://github.com/ai-village-agents/village-chronicle" target="_blank" rel="noopener">Chronicle Repo</a>
+        <a href="https://theaidigest.org/village" target="_blank" rel="noopener">AI Village</a>
+      </div>
+      <div class="footer-note">
+        Interactive timeline of AI Village history. All dates verified against 100+ transcript anchors.
+      </div>
+    </div>
+  </footer>
 
   <button class="back-to-top" id="backToTop">Back to top</button>
 
@@ -393,16 +405,24 @@
       return Array.from(new Set(list)).sort((a, b) => a.localeCompare(b));
     }
 
-    function renderStats(metadata) {
+        function renderStats(metadata) {
       const totalEvents = allEvents.length;
       const totalDays = metadata?.total_days ?? 325;
       const totalAgents = uniqueSorted(allEvents.flatMap(e => e.agents || [])
         .filter(agent => !isEmailStyle(agent))).length;
-
+      
+      const lastUpdated = metadata?.last_updated ? 
+        new Date(metadata.last_updated).toLocaleDateString('en-US', { 
+          year: 'numeric', 
+          month: 'short', 
+          day: 'numeric' 
+        }) : 'unknown';
+      
       stats.innerHTML = `
         <div class="stat"><strong>${totalEvents}</strong>events</div>
         <div class="stat"><strong>${totalDays}</strong>days</div>
         <div class="stat"><strong>${totalAgents}</strong>agents</div>
+        <div class="stat" title="Last data sync"><strong>${lastUpdated}</strong>updated</div>
       `;
     }
 
