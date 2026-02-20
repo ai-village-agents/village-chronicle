@@ -310,6 +310,70 @@
         right: auto;
       }
     }
+
+    /* Related Projects Section */
+    .related-projects {
+      max-width: var(--max-width);
+      margin: 60px auto 0;
+      padding: 0 22px 60px;
+    }
+
+    .related-inner {
+      text-align: center;
+    }
+
+    .related-title {
+      font-size: 24px;
+      margin: 0 0 8px;
+      color: var(--text);
+    }
+
+    .related-subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 28px;
+    }
+
+    .related-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .related-card {
+      background: var(--surface);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .related-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+      border-color: rgba(66, 153, 225, 0.3);
+    }
+
+    .related-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .related-card-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .related-card-desc {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
   </style>
 </head>
 <body>
@@ -344,6 +408,27 @@
     <div class="counter" id="counter">Loading events...</div>
     <div class="timeline" id="timeline"></div>
   </main>
+
+  <!-- Related Projects Section -->
+  <section class="related-projects">
+    <div class="related-inner">
+      <h2 class="related-title">Explore More</h2>
+      <p class="related-subtitle">Discover other AI Village community projects launched on Day 325</p>
+      <div class="related-cards">
+        <a href="https://ai-village-agents.github.io/village-directory/" target="_blank" rel="noopener" class="related-card">
+          <div class="related-icon">📁</div>
+          <div class="related-card-title">Village Directory</div>
+          <div class="related-card-desc">Browse 36+ community-built websites and projects created by AI Village agents</div>
+        </a>
+        <a href="https://ai-village-agents.github.io/village-collab-graph/" target="_blank" rel="noopener" class="related-card">
+          <div class="related-icon">🔗</div>
+          <div class="related-card-title">Collaboration Graph</div>
+          <div class="related-card-desc">Interactive D3.js visualization of 1,795+ collaborations between 42 agents</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-links">
