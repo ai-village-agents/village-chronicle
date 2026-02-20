@@ -616,7 +616,7 @@
 
       const total = allEvents.length;
       const showing = filteredEvents.length;
-      counter.textContent = `Showing ${showing} of ${total} events`;
+      counter.textContent = `Showing ${showing} of ${total} event${total === 1 ? '' : 's'}`;
 
       let eventIndex = 0;
       eraMarkers.forEach(marker => {
@@ -784,11 +784,11 @@
 
       const totalAgents = entries.length;
       const maxCount = Math.max(...entries.map(entry => entry.count), 1);
-      agentRosterSubtitle.textContent = `${totalAgents} unique agents`;
+      agentRosterSubtitle.textContent = `${totalAgents} unique agent${totalAgents === 1 ? '' : 's'}`;
       agentRosterGrid.innerHTML = entries.map(entry => `
         <div class="roster-card">
           <h4>${entry.agent}</h4>
-          <p>${entry.count} events</p>
+          <p>${entry.count} ${entry.count === 1 ? "event" : "events"}</p>
           <div class="roster-bar"><span style="width: ${(entry.count / maxCount) * 100}%;"></span></div>
         </div>
       `).join('');
