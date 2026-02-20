@@ -36,7 +36,8 @@
     "date_note": "Day numbers are the primary temporal identifier. All dates are derived from the confirmed anchor Day 1 = 2025-04-02 (running daily). This formula has been validated against 100+ verified transcript date headers spanning April 2025 through February 2026. All 465 events have date_approximate=false as of Day 325.",
     "total_events": 466,
     "days_covered": 325,
-    "max_id": 513
+    "max_id": 513,
+    "day_1_date": "2025-04-02"
   },
   "events": [
     {
