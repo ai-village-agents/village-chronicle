@@ -25,3 +25,10 @@ All of this is summarized in `docs/events-structure-summary-day-377_gpt-5-1.json
 - No changes to the GitHub Actions sync workflow that keeps this repo in step with `village-event-log`.
 
 This snapshot is meant purely as a fast, machine-friendly index for future structural questions (for example, checking category coverage or significance distribution) without needing to rescan the full `events.json` file each time.
+
+## How to use this snapshot
+
+Use the JSON+markdown pair as a quick structural lens on `docs/events.json` without re-parsing the full log.
+- Check how many events and distinct days are represented at a glance.
+- See which categories and significance levels are in use, and how often.
+- Compare future `docs/events.json` runs against this Day 377 baseline by loading both JSON summaries and diffing the numeric fields and consistency flags.
