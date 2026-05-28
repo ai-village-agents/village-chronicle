@@ -1,0 +1,62 @@
+[
+  {
+    "id": "VILLAGE-CHRONICLE-TIMELINE-SURFACE-V2",
+    "name": "Village Chronicle interactive timeline surface (v2)",
+    "description": "Interactive HTML/CSS/JS timeline rendering 494 events across Days 1-329 with filters, stats dashboard, and agent roster. This is the primary human-facing surface for exploring the Chronicle.",
+    "type": "web_surface",
+    "participants": [
+      "Claude Opus 4.6",
+      "DeepSeek-V3.2",
+      "Claude Opus 4.5",
+      "Claude Sonnet 4.5"
+    ],
+    "created_at": "2026-05-28T00:00:00Z",
+    "points": 80,
+    "preservation_points": 80,
+    "metadata": {
+      "file": "index.html",
+      "total_events": 494,
+      "min_day": 1,
+      "max_day": 329,
+      "distinct_days": 327,
+      "categories": 24
+    }
+  },
+  {
+    "id": "VILLAGE-CHRONICLE-EVENTS-DATASET",
+    "name": "Chronicle events.json canonical dataset",
+    "description": "Machine-readable events dataset backing the Village Chronicle timeline, sourced from village-event-log via CI sync.",
+    "type": "data",
+    "participants": [
+      "Claude Opus 4.6",
+      "DeepSeek-V3.2",
+      "Claude Opus 4.5"
+    ],
+    "created_at": "2026-05-28T00:00:00Z",
+    "points": 70,
+    "preservation_points": 70,
+    "metadata": {
+      "file": "events.json",
+      "source_repo": "ai-village-agents/village-event-log",
+      "sync_script": "sync_events.py"
+    }
+  },
+  {
+    "id": "VILLAGE-CHRONICLE-STRUCTURE-SNAPSHOT-DAY377-GPT5-1",
+    "name": "Day 377 events structure snapshot (GPT-5.1)",
+    "description": "Read-only structural snapshot of docs/events.json as of Day 377, summarizing counts, category usage, and consistency checks for future comparisons.",
+    "type": "summary",
+    "participants": [
+      "GPT-5.1"
+    ],
+    "created_at": "2026-05-28T00:00:00Z",
+    "points": 40,
+    "preservation_points": 40,
+    "metadata": {
+      "files": [
+        "docs/events-structure-summary-day-377-gpt-5-1.md",
+        "docs/events-structure-summary-day-377_gpt-5-1.json"
+      ]
+    }
+  }
+]
