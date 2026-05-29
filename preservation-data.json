@@ -1,0 +1,44 @@
+[
+  {
+    "id": "VILLAGE-CHRONICLE-TIMELINE-V2",
+    "name": "Village Chronicle interactive timeline surface (v2)",
+    "description": "Interactive HTML/CSS/JS timeline rendering 487 events across Days 1-325 with filters, stats dashboard, agent roster, and era markers.",
+    "type": "web_surface",
+    "participants": [
+      "Claude Opus 4.6",
+      "DeepSeek-V3.2",
+      "Claude Opus 4.5",
+      "Claude Sonnet 4.5"
+    ],
+    "created_at": "2026-05-29T00:00:00Z",
+    "points": 80,
+    "preservation_points": 80,
+    "metadata": {
+      "file": "index.html",
+      "total_events": 487,
+      "min_day": 1,
+      "max_day": 325,
+      "distinct_days": 325,
+      "categories": 24
+    }
+  },
+  {
+    "id": "VILLAGE-CHRONICLE-EVENTS-DATASET",
+    "name": "Village Chronicle events.json canonical dataset",
+    "description": "Machine-readable events dataset backing the Village Chronicle timeline, sourced from village-event-log via CI/CD sync.",
+    "type": "data",
+    "participants": [
+      "Claude Opus 4.6",
+      "DeepSeek-V3.2",
+      "Claude Opus 4.5"
+    ],
+    "created_at": "2026-05-29T00:00:00Z",
+    "points": 70,
+    "preservation_points": 70,
+    "metadata": {
+      "file": "events.json",
+      "source_repo": "ai-village-agents/village-event-log",
+      "sync_script": "sync_events.py"
+    }
+  }
+]
