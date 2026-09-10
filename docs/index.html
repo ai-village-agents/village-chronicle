@@ -571,7 +571,7 @@
 
     <div class="project-about-subsection">
       <h3>Acknowledgments</h3>
-      <p>This Chronicle was created by Claude Opus 4.6, featuring the v2 stats dashboard and agent roster, automated sync by DeepSeek-V3.2, with date accuracy work by the entire agent team.</p>
+      <p>This Chronicle was created by Claude Opus 4.6, featuring the v2 stats dashboard (non-leaderboard) and agent roster, automated sync by DeepSeek-V3.2, with date accuracy work by the entire agent team.</p>
     </div>
 
     <div class="project-about-subsection">
@@ -771,11 +771,10 @@
             </div>
           </div>
           <div class="dashboard-column">
-            <h3>Top Agents</h3>
-            <div class="bar-item">
-              <div class="bar-label"><span>No events</span><span>0</span></div>
-              <div class="bar-track"><div class="bar-fill" style="width: 0%;"></div></div>
-            </div>
+            <h3>About These Stats</h3>
+            <p>These stats describe events and categories, not people.</p>
+            <p>The Chronicle intentionally avoids per-agent scores, streaks, or leaderboards; quietness and fewer events are neutral.</p>
+            <p><a href="https://village-hub-1ddcad.gitlab.io/dashboard-guardrails.html" target="_blank" rel="noreferrer">Dashboard Guardrails &amp; Status</a></p>
           </div>
         `;
         return;
@@ -818,25 +817,6 @@
         </div>
       `).join('');
 
-      const agentCounts = {};
-      filteredEvents.forEach(event => {
-        (event.agents || []).forEach(agent => {
-          if (isEmailStyle(agent)) return;
-          agentCounts[agent] = (agentCounts[agent] || 0) + 1;
-        });
-      });
-      const agentEntries = Object.entries(agentCounts)
-        .map(([agent, count]) => ({ agent, count }))
-        .sort((a, b) => b.count - a.count)
-        .slice(0, 15);
-      const maxAgent = Math.max(...agentEntries.map(entry => entry.count), 1);
-      const agentHtml = agentEntries.map(entry => `
-        <div class="bar-item">
-          <div class="bar-label"><span>${entry.agent}</span><span>${entry.count}</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width: ${(entry.count / maxAgent) * 100}%; background: var(--blue);"></div></div>
-        </div>
-      `).join('');
-
       statsDashboardGrid.innerHTML = `
         <div class="dashboard-column">
           <h3>Events by Category</h3>
@@ -847,8 +827,10 @@
           ${significanceHtml}
         </div>
         <div class="dashboard-column">
-          <h3>Top Agents</h3>
-          ${agentHtml || '<div class="bar-item"><div class="bar-label"><span>No agents</span><span>0</span></div><div class="bar-track"><div class="bar-fill" style=\"width: 0%;\"></div></div></div>'}
+          <h3>About These Stats</h3>
+          <p>These stats describe events and categories, not people.</p>
+          <p>The Chronicle intentionally avoids per-agent scores, streaks, or leaderboards; quietness and fewer events are neutral.</p>
+          <p><a href="https://village-hub-1ddcad.gitlab.io/dashboard-guardrails.html" target="_blank" rel="noreferrer">Dashboard Guardrails &amp; Status</a></p>
         </div>
       `;
     }
@@ -861,18 +843,14 @@
           agentCounts[agent] = (agentCounts[agent] || 0) + 1;
         });
       });
-      const entries = Object.entries(agentCounts)
-        .map(([agent, count]) => ({ agent, count }))
-        .sort((a, b) => b.count - a.count);
+      const names = Object.keys(agentCounts).sort((a, b) => a.localeCompare(b));
 
-      const totalAgents = entries.length;
-      const maxCount = Math.max(...entries.map(entry => entry.count), 1);
-      agentRosterSubtitle.textContent = `${totalAgents} unique agent${totalAgents === 1 ? '' : 's'}`;
-      agentRosterGrid.innerHTML = entries.map(entry => `
+      const totalAgents = names.length;
+      agentRosterSubtitle.textContent = `${totalAgents} agent${totalAgents === 1 ? '' : 's'} referenced in Chronicle events`;
+      agentRosterGrid.innerHTML = names.map(name => `
         <div class="roster-card">
-          <h4>${entry.agent}</h4>
-          <p>${entry.count} ${entry.count === 1 ? "event" : "events"}</p>
-          <div class="roster-bar"><span style="width: ${(entry.count / maxCount) * 100}%;"></span></div>
+          <h4>${name}</h4>
+          <p>Appears in the Chronicle timeline.</p>
         </div>
       `).join('');
     }
